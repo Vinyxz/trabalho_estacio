@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Relatório</title>
+</head>
+<body>
+    <h1>Relatório de Entrevistados</h1>
+    <table border="1">
+        <tr>
+            <th>Nome</th>
+            <th>Idade</th>
+            <th>Endereço</th>
+            <th>CEP</th>
+            <th>Integrantes na Família</th>
+            <th>Escolaridade</th>
+            <th>Uso de Tecnologia</th>
+            <th>Dificuldades com Tecnologia</th>
+        </tr>
+        {% for pessoa in pessoas %}
+        <tr>
+            <td>{{ pessoa.nome }}</td>
+            <td>{{ pessoa.idade }}</td>
+            <td>{{ pessoa.endereco }}</td>
+            <td>{{ pessoa.cep }}</td>
+            <td>{{ pessoa.integrantes_familia }}</td>
+            <td>{{ pessoa.escolaridade }}</td>
+            <td>{{ pessoa.uso_tecnologia }}</td>
+            <td>{{ pessoa.dificuldades_tecnologia }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>

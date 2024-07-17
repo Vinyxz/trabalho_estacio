@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Cadastro</title>
+</head>
+<body>
+    <h1>Cadastro de Entrevistados</h1>
+    <form action="/cadastro" method="POST">
+        Nome: <input type="text" name="nome" required><br>
+        Idade: <input type="number" name="idade" required><br>
+        Endereço: <input type="text" name="endereco" required><br>
+        CEP: <input type="text" name="cep" required placeholder="12345-678"><br>
+        Número de Integrantes na Família: <input type="number" name="integrantes_familia" required><br>
+        Nível de Escolaridade: <input type="text" name="escolaridade" required><br>
+        Uso de Tecnologia: <input type="text" name="uso_tecnologia" required><br>
+        Dificuldades com Tecnologia: <input type="text" name="dificuldades_tecnologia" required><br>
+        <button type="submit">Cadastrar</button>
+    </form>
+    <br>
+    <a href="/relatorio">Ver Relatório</a>
+</body>
+</html>
