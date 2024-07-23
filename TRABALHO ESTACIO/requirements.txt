@@ -1,3 +1,0 @@
-Flask==2.1.1
-parse-rest==1.4.1
-gunicorn
